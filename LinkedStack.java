@@ -84,31 +84,3 @@ public void displayStack() {
 }
 }
 
-PROGRAM:
-
-    public boolean isEmpty()
-    {
-        if(top==null)
-        return true;
-        else
-        return false;
-    }
-    public void push(int data) 
-    {
-         Node newNode = new Node(data);
-         newNode.next = top;
-         top = newNode;
-    }
-    public int pop() 
-    {
-        int data=-1;
-        if (isEmpty()) {
-        System.out.print("\n STACK IS UNDERFLOW");
-        }
-        else
-        {
-           data=top.data;
-           top = top.next;
-        }
-        return data;
-    }
